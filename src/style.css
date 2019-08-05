@@ -1,0 +1,293 @@
+:root 
+{
+	--beth-ellen:'Beth Ellen', cursive;
+	--slabo:'Slabo 27px', serif;
+	--merienda:'Merienda One', cursive;
+	--oswald:'Oswald', sans-serif;
+	--primaryColor:#fd1c56;
+}
+
+*,
+html,
+body
+{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+
+}
+body {text-align: center;	overflow-x: hidden;
+}
+
+/*button*/
+.bells-btn 
+{
+	padding: 14px 50px;
+	border-radius: 2rem;
+	font-family: var(--merienda);
+	text-decoration: none !important; 
+	transition: all 0.8s ease-in-out;
+}
+
+.bells-btn.isPrimary
+{
+	background: var(--primaryColor);
+	color: #fff;
+}
+.hero
+{
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+ background-position: center !important;
+ background-attachment: fixed !important;
+ background-size: cover;
+ background-repeat: no-repeat;
+ animation-name: swapBackground;
+ animation-duration:100s;
+ animation-direction: alternate;
+	animation-timing-function: ease-in-out;}
+
+@keyframes swapBackground {
+
+   0% {
+   		background:
+   linear-gradient(to bottom,
+   						rgba(253, 28, 86,.6),80%,
+      rgba(255, 255, 255,.6)
+   ),url(/assets/img/bride.jpg);
+
+   }
+
+   20%
+   {
+   	background:
+   linear-gradient(
+ 					to bottom,
+   						rgba(253, 28, 86,.6),80%,
+      rgba(255, 255, 255,.6)
+   ),url(/assets/img/wedding-rings.jpg); 
+   }
+   40%
+   {
+   	background:
+   linear-gradient(to bottom,
+   						rgba(253, 28, 86,.6),80%,
+      rgba(255, 255, 255,.6)
+   ),url(/assets/img/flower.jpg); 
+   }
+   60%
+   {
+   	background:
+ 					to bottom,
+   						rgba(253, 28, 86,.6),80%,
+      rgba(255, 255, 255,.6)
+   ),url(/assets/img/couple-hugging.jpg); 
+   }
+60%
+   {
+   	background:
+   linear-gradient(
+						to bottom,
+   						rgba(253, 28, 86,.6),80%,
+      rgba(255, 255, 255,.6)
+   ),url(/assets/img/wedding-cake.JPG); 
+   }
+  100% {
+background:
+   linear-gradient(
+						to bottom,
+   						rgba(253, 28, 86,.6),80%,
+      rgba(255, 255, 255,.6)
+   ),url(/assets/img/couple.jpg);  }
+}
+.hero .hero-body
+{
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hero .fa-long-arrow-down
+{
+	color: #ffffff;
+	font-size: 30px;
+	padding: 0.65em 1em;
+	border:1px solid #fff;
+	border-radius: 50%;
+	transition: all 0.8s ease-in-out;
+}
+.hero .fa-long-arrow-down:focus
+{
+	outline: none;
+}
+.hero .fa-long-arrow-down:hover 
+{
+	background: #ffffff;
+	color: var(--primaryColor);
+}
+.hero .hero-body .hero-body-content
+{
+	text-align: center;
+}
+.hero .hero-body .hero-body-content .sub
+{
+		font-family: var(--oswald);
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		padding: 0.86rem;
+		width: 50%;
+		margin: 0 auto;
+}
+.hero .hero-body .hero-body-content .sub img
+{
+	width: 100%;
+	margin: 0.6rem auto;
+}
+.hero .hero-body .hero-body-content .sub p
+{
+	font-size: 0.89rem;
+	color: #fff;
+}
+.hero .hero-body .hero-body-content .main
+{
+	font-family: var(--merienda);
+	margin: 2rem;
+}
+.hero .hero-body .hero-body-content .main h1
+{
+	font-size: 6em;
+	color: #fff;
+}
+
+.hero .hero-body .hero-body-content .main h1 span
+{
+	background: var(--primaryColor);
+	font-size: 3rem;
+	padding: 1rem 2rem;
+	border-radius: 50%;
+	color: #fff;
+}
+.hero .hero-body .hero-body-content .action 
+{
+	margin: 3rem auto;
+}
+.hero .hero-body .hero-body-content .action .bells-btn i
+{
+	transition: 0.4s ease-in-out;
+}
+
+.hero .hero-body .hero-body-content .action .bells-btn:hover i
+{
+	transform: rotate(360deg);
+}
+@media screen and (max-width: 744px) {
+	.hero .hero-body .hero-body-content .main h1
+{
+	font-size: 2rem;
+	color: #fff;
+}
+.hero .hero-body .hero-body-content .main h1 span
+{
+	font-size: 1rem;
+		padding: 0.45rem 0.85rem;
+
+}
+.hero .fa-long-arrow-down
+{
+	font-size: 20px;
+}
+}
+
+.page-wrapper
+{
+	height: 100vh;
+	 width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.couple-story
+{
+	width: 100%;
+	min-height: 100vh;
+}
+.couple-story .image
+{
+		min-height: 60vh;
+}
+.couple-story .image img
+{
+	width: 100%;
+	object-fit: cover;
+	margin: 20px auto;
+	transform: rotate(-2deg);
+	padding: 2rem;
+	border: 5px solid #f3f3f3;
+}
+.couple-story .story
+{
+	text-align: left;
+	min-height: 60vh;
+	display: flex;
+	align-items: center;
+
+}
+
+.couple-story .story h1 {
+	font-family: var(--merienda);
+	font-size: 42px;
+	margin: 1rem auto;
+	color: rgba(253, 28, 86,.6);
+}
+.couple-story .story p 
+{
+	font-family: var(--oswald);
+	padding: 0.65em;
+}
+.quote-section
+{
+	min-height: 40vh;
+	   	background:
+   linear-gradient(
+						to right,
+   						rgba(253, 28, 86,.6),80%,
+      rgba(255, 255, 255,.6)
+   ),url(/assets/img/couple-hugging.jpg); 
+   background-attachment: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 3em auto;
+
+}
+.quote
+{
+	text-align: center;
+	color: #ffffff;
+	width: 60%;
+	margin: 0 auto;
+}
+.quote p i 
+{
+	font-style: italic;
+}
+.quote p 
+{
+	font-size: 30px;
+	font-family: var(--beth-ellen);
+}
+@media screen and (max-width: 744px) {
+.quote
+{
+	padding: 1em;
+	width: 100%;
+}
+.quote p 
+{
+	font-size: 20px;
+	font-family: var(--beth-ellen);
+}
+}
