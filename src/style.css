@@ -55,7 +55,7 @@ body {text-align: center;	overflow-x: hidden;
    linear-gradient(to bottom,
    						rgba(253, 28, 86,.6),80%,
       rgba(255, 255, 255,.6)
-   ),url(/assets/img/bride.jpg);
+   ),url(./assets/img/bride.jpg);
 
    }
 
@@ -66,7 +66,7 @@ body {text-align: center;	overflow-x: hidden;
  					to bottom,
    						rgba(253, 28, 86,.6),80%,
       rgba(255, 255, 255,.6)
-   ),url(/assets/img/wedding-rings.jpg); 
+   ),url(./assets/img/wedding-rings.jpg); 
    }
    40%
    {
@@ -74,7 +74,7 @@ body {text-align: center;	overflow-x: hidden;
    linear-gradient(to bottom,
    						rgba(253, 28, 86,.6),80%,
       rgba(255, 255, 255,.6)
-   ),url(/assets/img/flower.jpg); 
+   ),url(./assets/img/flower.jpg); 
    }
    60%
    {
@@ -82,7 +82,7 @@ body {text-align: center;	overflow-x: hidden;
  					to bottom,
    						rgba(253, 28, 86,.6),80%,
       rgba(255, 255, 255,.6)
-   ),url(/assets/img/couple-hugging.jpg); 
+   ),url(./assets/img/couple-hugging.jpg); 
    }
 60%
    {
@@ -91,7 +91,7 @@ body {text-align: center;	overflow-x: hidden;
 						to bottom,
    						rgba(253, 28, 86,.6),80%,
       rgba(255, 255, 255,.6)
-   ),url(/assets/img/wedding-cake.JPG); 
+   ),url(./assets/img/wedding-cake.JPG); 
    }
   100% {
 background:
@@ -99,7 +99,7 @@ background:
 						to bottom,
    						rgba(253, 28, 86,.6),80%,
       rgba(255, 255, 255,.6)
-   ),url(/assets/img/couple.jpg);  }
+   ),url(./assets/img/couple.jpg);  }
 }
 .hero .hero-body
 {
@@ -255,7 +255,7 @@ background:
 						to right,
    						rgba(253, 28, 86,.6),80%,
       rgba(255, 255, 255,.6)
-   ),url(/assets/img/couple-hugging.jpg); 
+   ),url(./assets/img/couple-hugging.jpg); 
    background-attachment: fixed;
    display: flex;
    align-items: center;
