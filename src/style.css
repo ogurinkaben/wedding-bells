@@ -164,6 +164,7 @@ input:focus
 	position: relative;
 	height: 100vh;
 	width: 100vw;
+	background-attachment: fixed !important;
  animation-name: swapBackground;
  animation-duration:100s;
  animation-direction: alternate;
