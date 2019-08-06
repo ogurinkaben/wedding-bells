@@ -66,10 +66,10 @@ $(document).ready(function() {
             const info = $('#contactInfo').val();
 
             if (info === "") {
-                $('.info-error').text('Please enter your first name.').fadeIn();
+                $('.info-error').text('Please enter your full name.').fadeIn();
 
                 setTimeout(function() {
-                    $('.info-error').text('Please enter your first name.').fadeOut();
+                    $('.info-error').text('Please enter an email or phone number').fadeOut();
                 }, 3000);
             };
             return false;
