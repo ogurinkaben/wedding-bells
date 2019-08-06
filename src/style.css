@@ -59,7 +59,11 @@ input:focus
 {
 	transform: rotate(4deg);
 }
-/*owlcarousel nav*/
+/*owlcarousel*/
+.owl-stage-outer
+{
+	padding: 2em 1em;
+}
 .owl-nav 
 {
   padding: 1em;
