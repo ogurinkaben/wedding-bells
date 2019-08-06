@@ -90,14 +90,15 @@ input:focus
   -webkit-transition: .8s ease;
   -o-transition: .8s ease;
   transition: .8s ease;
+  font-style: italic;
 
 }
 
 .owl-nav .owl-prev:hover i ,
 .owl-nav .owl-next:hover i
 {
-    color: #FFFFFF !important;
-    background: var(--primaryColor) !important;
+      font-size: 45px !important;
+
 
 }
 
