@@ -86,7 +86,7 @@ $(document).ready(function() {
                     $('.seat-saved-msg').fadeOut();
                     $('.seat-saved-msg h1').text('See you there ' + name).fadeOut();
                     location.reload();
-                    $('form').find("input[type=text], textarea").val("");
+                    $('form').find("input[type=text], textarea, select").val("");
                 }, 3000);
 
             }

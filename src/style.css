@@ -21,7 +21,8 @@ body {text-align: center;	overflow-x: hidden;
 }
 a:focus,
 button:focus,
-input:focus
+input:focus,
+select:focus
 {
 	outline: none !important;
 }
@@ -59,7 +60,18 @@ input:focus
 {
 	transform: rotate(4deg);
 }
-/*owlcarousel*/
+/*carousel*/
+.carousel-inner,
+.carousel-item
+{
+	min-height: 60vh;
+	padding: 3rem 0;
+}
+.carousel-control
+{
+	font-size: 30px;
+	font-style: italic;
+}
 .owl-stage-outer
 {
 	padding: 2em 1em;
@@ -484,24 +496,20 @@ background:
 	color: var(--primaryColor);
 }
 
-.venue
+.the-event
 {
-	background:
-   linear-gradient(
- 					to bottom,
-   						rgba(253, 28, 86,.6),80%,
-      rgba(255, 255, 255,.6)
-   ),url(../assets/img/venue2.jpg); 
-    background-position: center !important;
- background-attachment: fixed !important;
- background-size: cover;
- background-repeat: no-repeat;
  min-height: 50vh;
- padding: 3em 1em;
+ padding: 3em 0;
  margin: 2em auto;
 
 }
-.venue .venue-info
+.the-event .heading h3
+{
+		font-size: 50px;
+	font-family: var(--merienda);
+	color: #fff;
+}
+.the-event .the-event-info
 {
 	padding: 1em;
 	 min-height: 30vh;
@@ -511,22 +519,25 @@ background:
 }
 
 @media screen and (max-width: 744px) {
-	.venue {padding-bottom: 4em;}
-	.venue .venue-info {
+	.the-event {padding-bottom: 4em;}
+	.the-event .the-event-info {
 		min-height: 20vh;
 	}
 }
-.venue .venue-info i
+.the-event .the-event-info i
 {
 	color: #fff;
 	font-size: 50px;
 }
-.venue .venue-info p {
+.the-event .the-event-info p {
 	color: #fff;
 	font-size: 30px;
 	font-family: var(--oswald);
 }
-
+.the-event .the-event-info p small
+{
+	font-size: 16px;
+}
 .save-a-seat
 {
 	padding: 3rem 0;
@@ -576,7 +587,23 @@ font-family: var(--merienda);
 color: #555;
 transition: 0.8s ease;
 }
-.save-a-seat .form-area .form .b-input-group .b-input-field:focus
+.save-a-seat .form-area .form .b-input-group .b-select
+{
+	width: 100%;
+	background: transparent;
+	border:none;
+	padding: 20px;
+	font-family: var(--merienda);
+	font-size: 30px;
+	border-bottom: 5px solid #555;
+border-radius: 255px 15px 225px 1px/1px 225px 15px 255px;
+color: #555;
+transition: 0.8s ease;
+
+}
+
+.save-a-seat .form-area .form .b-input-group .b-input-field:focus,
+	.save-a-seat .form-area .form .b-input-group .b-select:focus
 {
 	border-bottom: 5px solid var(--primaryColor);
 
@@ -605,12 +632,14 @@ transition: 0.8s ease;
 		font-size: 36px;
 	}
 	.save-a-seat .form-area .form .b-input-group .b-input-field,
+		.save-a-seat .form-area .form .b-input-group .b-select,
 	.save-a-seat .form-area .form .b-input-group .b-input-field::-webkit-input-placeholder,
 	.save-a-seat .form-area .form .b-input-group .b-input-field:-ms-input-placeholder,
 	.save-a-seat .form-area .form .b-input-group .b-input-field::placeholder
 	{
 		font-size: 20px
 	}
+
 }
 .gallery
 {
@@ -636,4 +665,107 @@ transition: 0.8s ease;
 {
 	padding: 2em;
 	border:5px dotted #f3f3f3;
+}
+
+.message-section
+{
+	min-height: 40vh;
+	   	background:
+   linear-gradient(
+						to right,
+   						rgba(253, 28, 86,.6),80%,
+      rgba(255, 255, 255,.6)
+   ),url(../assets/img/gallery-img-10.jpg); 
+   background-attachment: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-size: cover;
+   margin-top: 3em;
+
+}
+.message
+{
+	text-align: center;
+	color: #ffffff;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.message p 
+{
+	font-size: 30px;
+	font-family: var(--beth-ellen);
+}
+@media screen and (max-width: 744px) {
+.message
+{
+	padding: 1em;
+	width: 100%;
+}
+.message p 
+{
+	font-size: 20px;
+	font-family: var(--beth-ellen);
+}
+}
+
+.contact {
+	min-height: 50vh;
+	padding: 3rem 1em;
+	margin: 3rem auto;
+}
+.contact .heading
+{
+	padding: 2em 1em;
+}
+.contact .heading h3
+{
+	font-size: 50px;
+	font-family: var(--merienda);
+	
+}
+.contact .heading h3 span
+{
+	color: var(--primaryColor);
+}
+.contact .contact-icon
+{
+	margin: 1em auto;
+}
+.contact .contact-icon i
+{
+	font-size: 30px;
+	padding: 0.67em;
+	background: var(--primaryColor);
+	color: #fff;
+	border-radius: 50%;
+}
+
+.contact .contact-content
+{
+	padding:1em;
+	margin: 1em auto;
+}
+.contact .contact-content p
+{
+	font-family: var(--oswald);
+}
+
+.footer
+{
+	min-height: 50px;
+	background: var(--primaryColor);
+	color: #fff;
+	padding: 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: var(--merienda);
+}
+.footer a 
+{
+	color: #f3f3f3;
+	font-weight: 900;
+	text-decoration: underline;
 }
