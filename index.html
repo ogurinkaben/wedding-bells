@@ -15,9 +15,20 @@
 		<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
 		<link rel="stylesheet" href="src/style.css">
 	</head>
 	<body>
+		<div class="loader">
+			<div class="heart">
+				<i class="ti-heart"></i>
+			</div>
+		</div>
+		<div class="seat-saved-msg">
+			<div>
+				<h1></h1>
+			</div>
+		</div>
 		<header class="hero">
 			<div class="hero-body">
 				<div class="hero-body-content">
@@ -187,12 +198,109 @@
 						</div>
 					</div>
 				</div>
-				<a href="#seat" class="bells-btn isPrimary">Get Directions <i class="ti-map-alt"></i></a>
+				<div class="pt-2 mt-3">
+					<a href="https://www.google.com/maps/" class="bells-btn isPrimary" target="_blank">Get Directions <i class="ti-map-alt"></i></a>
+				</div>
 			</div>
 		</section>
+		<section class="save-a-seat" id="seat">
+			<div class="container">
+				<div class="heading">
+					<h3 class="tl-2 pt-2 pb-2"><span>Save</span> a Seat</h3>
+				</div>
+				<div class="form-area">
+					<form class="form" method="" action="">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="b-input-group">
+									<input type="text" class="b-input-field" placeholder="Full Name" id="name">
+									<p class="name-error err"></p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="b-input-group">
+									<input type="text" class="b-input-field" placeholder="Email or Phone " id="contactInfo">
+									<p class="info-error err"></p>
+								</div>
+							</div>
+							<div class="col-md-12 pt-3 mt-4">
+								<button type="submit" class="bells-btn isPrimary">Save Seat! <i class="ti-heart"></i></button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="gallery">
+			<div class="container-fluid">
+				<div class="row justify-content-center text-center my-3">
+					<div class="heading">
+						<h3 class="tl-2"><span>Our</span> Gallery</h3>
+					</div>
+				</div>
+				<div class="">
+					<div class="carousel-wrap">
+						<div class="owl-carousel">
+							<div class="item galleryItem tr-2">
+								<a href="assets/img/gallery-img-1.jpg" data-lightbox="gallery" data-title="Proposal" class="">
+									<img src="assets/img/gallery-img-1.jpg" class="img-fluid" alt="The Day we made it official">
+								</a>
+							</div>
+							<div class="item galleryItem tl-2">
+								<a href="assets/img/gallery-img-2.jpg" data-lightbox="gallery" data-title="Hanging Out" class="">
+									<img src="assets/img/gallery-img-2.jpg" class="img-fluid" alt="">
+								</a>
+							</div>
+							<div class="item galleryItem tr-1">
+								<a href="assets/img/gallery-img-3.jpg" data-lightbox="gallery" data-title="Flower" class="">
+									<img src="assets/img/gallery-img-3.jpg" class="img-fluid" alt="">
+								</a>
+							</div>
+							<div class="item galleryItem tl-1">
+								<a href="assets/img/gallery-img-4.jpg" data-lightbox="gallery" data-title="At the Beach" class="">
+									<img src="assets/img/gallery-img-4.jpg" class="img-fluid" alt="">
+								</a>
+							</div>
+							<div class="item galleryItem tr-2">
+								<a href="assets/img/gallery-img-5.jpg" data-lightbox="gallery" data-title="Shoes and Card" class="">
+									<img src="assets/img/gallery-img-5.jpg" class="img-fluid" alt="">
+								</a>
+							</div>
+							<div class="item galleryItem tl-2">
+								<a href="assets/img/gallery-img-6.jpg" data-lightbox="gallery" data-title="Wedding Dress" class="">
+									<img src="assets/img/gallery-img-6.jpg" class="img-fluid" alt="">
+								</a>
+							</div>
+							<div class="item galleryItem tr-2">
+								<a href="assets/img/gallery-img-7.jpg" data-lightbox="gallery" data-title="Reception" class="">
+									<img src="assets/img/gallery-img-7.jpg" class="img-fluid" alt="">
+								</a>
+							</div>
+							<div class="item galleryItem tl-1">
+								<a href="assets/img/gallery-img-8.jpg" data-lightbox="gallery" data-title="The Church" class="">
+									<img src="assets/img/gallery-img-8.jpg" class="img-fluid" alt="">
+								</a>
+							</div>
+							<div class="item galleryItem tr-1">
+								<a href="assets/img/gallery-img-9.jpg" data-lightbox="gallery" data-title="The Cake" class="">
+									<img src="assets/img/gallery-img-9.jpg" class="img-fluid" alt="">
+								</a>
+							</div>
+							<div class="item galleryItem tl-2">
+								<a href="assets/img/gallery-img-10.jpg" data-lightbox="gallery" data-title="Drinks" class="">
+									<img src="assets/img/gallery-img-10.jpg" class="img-fluid" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
 		<script src="lib/jquery/jquery.min.js"></script>
 		<script src="lib/owlcarousel/owl.carousel.min.js"></script>
 		<script src="lib/bootstrap/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
 		<script src="src/main.js"></script>
 	</body>
 </html>

@@ -14,15 +14,22 @@ body
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	scroll-behavior: smooth;
 
 }
 body {text-align: center;	overflow-x: hidden;
 }
-
+a:focus,
+button:focus,
+input:focus
+{
+	outline: none !important;
+}
 /*button*/
 .bells-btn 
 {
 	padding: 14px 50px;
+	border: none;
 	border-radius: 2rem;
 	font-family: var(--merienda);
 	text-decoration: none !important; 
@@ -63,7 +70,7 @@ body {text-align: center;	overflow-x: hidden;
 .owl-nav .owl-next
 {
   color: var(--primaryColor) !important;
-  margin: 1em 1em 1em 0;
+  margin: 3px;
   border-radius: 50%;
   font-size: 40px !important;
   -webkit-transition: .8s ease;
@@ -73,7 +80,7 @@ body {text-align: center;	overflow-x: hidden;
 .owl-nav .owl-prev i,
 .owl-nav .owl-next i
 {
-  padding: .45em  !important;
+  padding: .35em  !important;
   color: var(--primaryColor);
   border-radius: 50%;
   -webkit-transition: .8s ease;
@@ -90,7 +97,55 @@ body {text-align: center;	overflow-x: hidden;
 
 }
 
+.loader,
+.seat-saved-msg
+{
+	height: 100vh;
+	background:
+   linear-gradient(to bottom,
+   						rgba(253, 28, 86,.9),80%,
+      rgba(255, 255, 255,.9)
+   );
+ position: fixed;
+ width: 100vw;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ z-index: 88;
+}
+.loader .heart i 
+{
+	color: #fff;
+	font-size: 80px;
+	animation: blink 1s linear infinite;
+	opacity: 1;
+}
 
+.seat-saved-msg h1 
+{
+	font-family: var(--merienda);
+	color: #fff;
+	font-size: 36px;
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.err
+{
+	font-family: var(--oswald);
+	color: var(--primaryColor);
+}
+
+.clear
+{
+	padding: 0 !important;
+}
+/*Main Content*/
 .hero
 {
 	position: relative;
@@ -99,7 +154,9 @@ body {text-align: center;	overflow-x: hidden;
  animation-name: swapBackground;
  animation-duration:100s;
  animation-direction: alternate;
-	animation-timing-function: ease-in-out;}
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
 
 @keyframes swapBackground {
 
@@ -440,8 +497,9 @@ background:
 }
 
 @media screen and (max-width: 744px) {
+	.venue {padding-bottom: 4em;}
 	.venue .venue-info {
-		min-height: 30vh;
+		min-height: 20vh;
 	}
 }
 .venue .venue-info i
@@ -453,4 +511,115 @@ background:
 	color: #fff;
 	font-size: 30px;
 	font-family: var(--oswald);
+}
+
+.save-a-seat
+{
+	padding: 3rem 0;
+}
+
+.save-a-seat .heading
+{
+	padding: 2rem;
+	color: #555;
+
+}
+.save-a-seat .heading h3
+{
+	font-size: 50px;
+	font-family: var(--merienda);
+	
+}
+.save-a-seat .heading h3 span
+{
+	color:var(--primaryColor); 
+}
+
+.save-a-seat .form-area
+{
+	min-height:400px;
+	border: 5px dotted #f3f3f3;
+	position: relative;
+}
+.save-a-seat .form-area .form
+{
+	transform: rotate(0deg) !important;
+	padding: 4em 1em;
+}
+.save-a-seat .form-area .form .b-input-group
+{
+	margin: 10px auto;
+}
+.save-a-seat .form-area .form .b-input-group .b-input-field
+{
+border: none;
+border-bottom: 5px solid #555;
+border-radius: 255px 15px 225px 1px/1px 225px 15px 255px;
+width: 100%;
+padding: 20px;
+font-size: 30px;
+font-family: var(--merienda);
+color: #555;
+transition: 0.8s ease;
+}
+.save-a-seat .form-area .form .b-input-group .b-input-field:focus
+{
+	border-bottom: 5px solid var(--primaryColor);
+
+}
+.save-a-seat .form-area .form .b-input-group .b-input-field::-webkit-input-placeholder { 
+  color: #555;
+  font-family: var(--merienda);
+  font-size: 30px;
+}
+
+.save-a-seat .form-area .form .b-input-group .b-input-field:-ms-input-placeholder {
+  color: #555;
+  font-family: var(--merienda);
+  font-size: 30px;
+}
+
+.save-a-seat .form-area .form .b-input-group .b-input-field::placeholder {
+  color: #555;
+  font-family: var(--merienda);
+  font-size: 30px;
+}
+@media screen and (max-width: 744px) 
+{
+	.save-a-seat .heading h3
+	{
+		font-size: 36px;
+	}
+	.save-a-seat .form-area .form .b-input-group .b-input-field,
+	.save-a-seat .form-area .form .b-input-group .b-input-field::-webkit-input-placeholder,
+	.save-a-seat .form-area .form .b-input-group .b-input-field:-ms-input-placeholder,
+	.save-a-seat .form-area .form .b-input-group .b-input-field::placeholder
+	{
+		font-size: 20px
+	}
+}
+.gallery
+{
+	padding: 3rem 0;
+}
+.gallery .heading 
+{
+	padding: 4rem;
+}
+.gallery .heading h3
+{
+	font-size: 50px;
+	font-family: var(--merienda);
+	
+}
+.gallery .heading h3 span
+{
+	color: var(--primaryColor);
+}
+
+.gallery .galleryItem
+
+{
+	padding: 2em;
+	border:5px dotted #f3f3f3;
 }
