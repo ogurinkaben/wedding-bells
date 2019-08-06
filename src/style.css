@@ -64,6 +64,14 @@ input:focus
 {
 	padding: 2em 1em;
 }
+
+@media screen and (max-width: 744px) {
+	.owl-stage-outer
+{
+	padding: 0 !important;
+}
+
+}
 .owl-nav 
 {
   padding: 1em;
