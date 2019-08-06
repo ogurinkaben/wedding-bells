@@ -10,9 +10,11 @@
 		<meta name="robots" content="follow" />
 		<title>Wedding Bells</title>
 		<link href="https://fonts.googleapis.com/css?family=Beth+Ellen|Merienda+One|Slabo+27px&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="lib/owlcarousel/owl.carousel.min.css">
+		<link rel="stylesheet" href="lib/owlcarousel/owl.theme.default.css">
 		<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="lib/bootstrap-grid/grid.min.css">
+		<link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
 		<link rel="stylesheet" href="src/style.css">
 	</head>
 	<body>
@@ -27,11 +29,11 @@
 						<h1>Milton <span>&</span> Jessica</h1>
 					</div>
 					<div class="action">
-						<a href="seat.html" class="bells-btn isPrimary">Save a seat <i class="fa fa-heart-o"></i></a>
+						<a href="#seat" class="bells-btn isPrimary">Save a seat <i class="ti-heart"></i></a>
 					</div>
 				</div>
 			</div>
-			<a href="#story" class="scroll" data-speed="2000"><i class="fa fa-long-arrow-down"></i></a>
+			<a href="#story" class="scroll" data-speed="2000"><i class="ti-arrow-down"></i></a>
 		</header>
 		<section class="couple-story" id="story">
 			<div class="container">
@@ -56,7 +58,141 @@
 				<p>Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.</p>
 			</div>
 		</section>
-		
+		<section class="our-people container-fluid">
+			<ul class="nav nav-tabs mb-5" id="myTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="theLadies-tab" data-toggle="tab" href="#theLadies" role="tab" aria-controls="theLadies" aria-selected="true">The Ladies</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="theGuys-tab" data-toggle="tab" href="#theGuys" role="tab" aria-controls="theGuys" aria-selected="false">The Guys</a>
+				</li>
+				
+			</ul>
+			<div class="tab-content mt-5" id="myTabContent">
+				<div class="tab-pane fade show active" id="theLadies" role="tabpanel" aria-labelledby="theLadies-tab">
+					<div class="carousel-wrap">
+						<div class="owl-carousel">
+							<div class="item">
+								<div class="people-single tr-1">
+									<div class="people-img">
+										<img src="assets/img/maids--all.jpg" alt="A Photo of all the Bridesmaids" class="img-fluid">
+									</div>
+									<div class="people-info">
+										<h3>The Bridesmaids </h3>
+										<p>A photo of all the Bridesmaids</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="people-single tl-2">
+									<div class="people-img">
+										<img src="assets/img/maid-1.jpg" alt="A Photo of all the grooms men" class="img-fluid">
+									</div>
+									<div class="people-info">
+										<h3>Yolanda Joe</h3>
+										<p><i class="fa fa-heart-o"></i> Best Friend <i class="fa fa-heart-o"></i></p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="people-single tr-2">
+									<div class="people-img">
+										<img src="assets/img/maid-2.jpg" alt="A Photo of all the grooms men" class="img-fluid">
+									</div>
+									<div class="people-info">
+										<h3>Ellie Julius</h3>
+										<p><i class="fa fa-heart-o"></i> Older Sister <i class="fa fa-heart-o"></i></p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="people-single tl-1">
+									<div class="people-img">
+										<img src="assets/img/maid-3.jpg" alt="A Photo of all the grooms men" class="img-fluid">
+									</div>
+									<div class="people-info">
+										<h3>Blossom Nicole</h3>
+										<p><i class="fa fa-heart-o"></i> Younger Sister <i class="fa fa-heart-o"></i></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="theGuys" role="tabpanel" aria-labelledby="theGuys-tab">
+					<div class="carousel-wrap">
+						<div class="owl-carousel">
+							<div class="item">
+								<div class="people-single tl-1">
+									<div class="people-img">
+										<img src="assets/img/groomsmen--all.jpg" alt="A Photo of all the grooms men" class="img-fluid">
+									</div>
+									<div class="people-info">
+										<h3>The Groomsmen </h3>
+										<p>A photo of all the Groom's men</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="people-single tr-2">
+									<div class="people-img">
+										<img src="assets/img/bestman.jpg" alt="A Photo of all the grooms men" class="img-fluid">
+									</div>
+									<div class="people-info">
+										<h3>Tammy Benjamin</h3>
+										<p><i class="fa fa-heart-o"></i> Best Friend <i class="fa fa-heart-o"></i></p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="people-single tl-2">
+									<div class="people-img">
+										<img src="assets/img/bestfriend-groom.jpg" alt="A Photo of all the grooms men" class="img-fluid">
+									</div>
+									<div class="people-info">
+										<h3>Ben Benjamin</h3>
+										<p><i class="fa fa-heart-o"></i> Business Partner <i class="fa fa-heart-o"></i></p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="people-single tr-2">
+									<div class="people-img">
+										<img src="assets/img/groomsman.jpg" alt="A Photo of all the grooms men" class="img-fluid">
+									</div>
+									<div class="people-info">
+										<h3>Chris Joe</h3>
+										<p><i class="fa fa-heart-o"></i> Step Brother <i class="fa fa-heart-o"></i></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="venue">
+			<div class="container text-center">
+				<div class="row">
+					<div class="venue-info col-md-6">
+						<div>
+							<i class="ti-location-pin"></i>
+							<p>The Arena</p>
+						</div>
+					</div>
+					<div class="venue-info col-md-6">
+						<div>
+							<i class="ti-time"></i>
+							<p>10am</p>
+						</div>
+					</div>
+				</div>
+				<a href="#seat" class="bells-btn isPrimary">Get Directions <i class="ti-map-alt"></i></a>
+			</div>
+		</section>
+		<script src="lib/jquery/jquery.min.js"></script>
+		<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+		<script src="lib/bootstrap/bootstrap.min.js"></script>
 		<script src="src/main.js"></script>
 	</body>
 </html>

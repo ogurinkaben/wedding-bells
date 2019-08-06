@@ -34,15 +34,68 @@ body {text-align: center;	overflow-x: hidden;
 	background: var(--primaryColor);
 	color: #fff;
 }
+
+/*tilts*/
+.tl-1
+{
+	transform: rotate(-2deg);
+}
+.tl-2
+{
+	transform: rotate(-4deg);
+}
+.tr-1
+{
+	transform: rotate(2deg);
+}
+.tr-2
+{
+	transform: rotate(4deg);
+}
+/*owlcarousel nav*/
+.owl-nav 
+{
+  padding: 1em;
+  z-index: 999999;
+  margin: 0 auto;
+}
+.owl-nav .owl-prev,
+.owl-nav .owl-next
+{
+  color: var(--primaryColor) !important;
+  margin: 1em 1em 1em 0;
+  border-radius: 50%;
+  font-size: 40px !important;
+  -webkit-transition: .8s ease;
+  -o-transition: .8s ease;
+  transition: .8s ease;
+}
+.owl-nav .owl-prev i,
+.owl-nav .owl-next i
+{
+  padding: .45em  !important;
+  color: var(--primaryColor);
+  border-radius: 50%;
+  -webkit-transition: .8s ease;
+  -o-transition: .8s ease;
+  transition: .8s ease;
+
+}
+
+.owl-nav .owl-prev:hover i ,
+.owl-nav .owl-next:hover i
+{
+    color: #FFFFFF !important;
+    background: var(--primaryColor) !important;
+
+}
+
+
 .hero
 {
 	position: relative;
 	height: 100vh;
 	width: 100vw;
- background-position: center !important;
- background-attachment: fixed !important;
- background-size: cover;
- background-repeat: no-repeat;
  animation-name: swapBackground;
  animation-duration:100s;
  animation-direction: alternate;
@@ -78,11 +131,11 @@ body {text-align: center;	overflow-x: hidden;
    }
    60%
    {
-   	background:
+   	background:linear-gradient(
  					to bottom,
    						rgba(253, 28, 86,.6),80%,
       rgba(255, 255, 255,.6)
-   ),url(./assets/img/couple-hugging.jpg); 
+   ),url(../assets/img/couple-hugging.jpg); 
    }
 60%
    {
@@ -108,20 +161,23 @@ background:
 	justify-content: center;
 	align-items: center;
 }
-.hero .fa-long-arrow-down
+.hero a {
+	text-decoration: none;
+}
+.hero .ti-arrow-down
 {
 	color: #ffffff;
 	font-size: 30px;
-	padding: 0.65em 1em;
+	padding: 0.65em 0.75em;
 	border:1px solid #fff;
 	border-radius: 50%;
 	transition: all 0.8s ease-in-out;
 }
-.hero .fa-long-arrow-down:focus
+.hero .ti-arrow-down:focus
 {
 	outline: none;
 }
-.hero .fa-long-arrow-down:hover 
+.hero .ti-arrow-down:hover 
 {
 	background: #ffffff;
 	color: var(--primaryColor);
@@ -193,7 +249,7 @@ background:
 		padding: 0.45rem 0.85rem;
 
 }
-.hero .fa-long-arrow-down
+.hero .ti-arrow-down
 {
 	font-size: 20px;
 }
@@ -290,4 +346,111 @@ background:
 	font-size: 20px;
 	font-family: var(--beth-ellen);
 }
+}
+
+.our-people
+{
+	min-height: 100vh;
+	padding: 2em;
+}
+
+.our-people .nav.nav-tabs
+{
+	display: flex;
+	justify-content: center;
+	border-bottom: none;
+}
+.our-people .nav .nav-item .nav-link
+{
+		padding: 14px 50px;
+	border-radius: 2rem;
+	font-family: var(--merienda);
+	transition: 0.8s ease-in-out;
+	color:var(--primaryColor);
+	border: 2px solid var(--primaryColor);
+	margin: 6px;
+}
+.our-people .nav .nav-item .nav-link:hover,
+.our-people .nav .nav-item .nav-link:focus,
+.our-people .nav .nav-item .nav-link.active
+{
+	background: var(--primaryColor);
+	color: #fff;
+	outline: none;
+}
+
+.our-people .people-single
+{
+	min-height: 400px;
+
+}
+.our-people .people-single .people-img img
+{
+	padding: 2rem;
+	border: 5px dotted #f3f3f3;
+	width: 100%;
+	max-height: 450px;
+	object-fit: cover;
+}
+.our-people .people-single .people-info 
+{
+	font-family: var(--merienda);
+	padding: 1rem 0.37rem;
+}
+.our-people .people-single .people-info h3
+{
+	font-size: 30px;
+	color: rgba(253, 28, 86,.9);
+
+}
+
+.our-people .people-single .people-info p
+{
+	font-size: 16px;
+}
+.our-people .people-single .people-info p i
+{
+	color: var(--primaryColor);
+}
+
+.venue
+{
+	background:
+   linear-gradient(
+ 					to bottom,
+   						rgba(253, 28, 86,.6),80%,
+      rgba(255, 255, 255,.6)
+   ),url(../assets/img/venue2.jpg); 
+    background-position: center !important;
+ background-attachment: fixed !important;
+ background-size: cover;
+ background-repeat: no-repeat;
+ min-height: 50vh;
+ padding: 3em 1em;
+ margin: 2em auto;
+
+}
+.venue .venue-info
+{
+	padding: 1em;
+	 min-height: 30vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+@media screen and (max-width: 744px) {
+	.venue .venue-info {
+		min-height: 30vh;
+	}
+}
+.venue .venue-info i
+{
+	color: #fff;
+	font-size: 50px;
+}
+.venue .venue-info p {
+	color: #fff;
+	font-size: 30px;
+	font-family: var(--oswald);
 }
